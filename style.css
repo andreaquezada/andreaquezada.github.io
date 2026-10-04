@@ -1,0 +1,55 @@
+:root {
+  --ink: #1a1a1a;
+  --muted: #666;
+  --rule: #1a1a1a;
+  --accent: #b3261e;
+  --bg: #fbfaf7;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.65;
+}
+.shell { max-width: 960px; margin: 0 auto; padding: 0 1.5rem; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.topbar { padding: 1.2rem 1.5rem; font-family: system-ui, sans-serif; font-size: .95rem; }
+.topbar a { color: var(--ink); }
+
+/* Hero with photo */
+.hero { border-top: 4px solid var(--rule); border-bottom: 4px solid var(--rule);
+        padding: 2rem 0; margin-bottom: 3rem; }
+.hero-grid { display: grid; grid-template-columns: 1fr 220px; gap: 2rem; align-items: center; }
+.hero h1 { font-size: clamp(2.6rem, 8vw, 5rem); line-height: 1; margin: 0 0 1rem; }
+.standfirst { font-size: 1.25rem; margin: 0 0 1rem; }
+.hero-meta { font-family: system-ui, sans-serif; font-size: .9rem; color: var(--muted); }
+.hero-meta span { display: block; }
+.hero-meta .k { display: inline-block; min-width: 6rem; font-weight: 600; color: var(--ink); }
+.photo { width: 220px; height: 220px; object-fit: cover; border-radius: 50%;
+         border: 3px solid var(--ink); background: #ddd; }
+
+/* Sections */
+.room { margin-bottom: 3.5rem; }
+.room-head { display: flex; align-items: baseline; gap: 1rem;
+             border-bottom: 2px solid var(--rule); margin-bottom: 1.2rem; }
+.room-no { font-family: system-ui, sans-serif; color: var(--accent); font-weight: 700; }
+.room h2 { margin: 0 0 .3rem; font-size: 1.8rem; }
+
+/* Tables */
+table { width: 100%; border-collapse: collapse; font-size: .97rem; }
+th, td { text-align: left; padding: .6rem .5rem; border-bottom: 1px solid #ddd; vertical-align: top; }
+th { font-family: system-ui, sans-serif; font-size: .8rem; text-transform: uppercase; letter-spacing: .05em; }
+td.year { white-space: nowrap; width: 5.5rem; }
+
+footer { border-top: 1px solid #ccc; padding: 1.5rem 0 3rem; color: var(--muted);
+         font-family: system-ui, sans-serif; font-size: .85rem; }
+
+@media (max-width: 700px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .photo { order: -1; width: 160px; height: 160px; }
+}
