@@ -2,37 +2,101 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Andrea Quezada – Scientific Profile</title>
-  <meta name="description" content="Biophysical chemistry and computational structural biology – research, publications, and outreach.">
-  <style>
-    body { font-family: sans-serif; max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
-    header { border-bottom: 1px solid #ccc; margin-bottom: 1.5rem; }
-    nav a { margin-right: 1rem; text-decoration: none; color: #0366d6; }
-    nav a:hover { text-decoration: underline; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Marie Curie research fellow in biophysical chemistry and computational structural biology, Max Delbrück Center, Berlin.">
+  <title>Andrea Quezada</title> <!-- EDIT: your full name -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Andrea Quezada</h1>
-    <p>Biophysical chemistry · Structural biology · Computational biology</p>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="research.html">Research</a>
-      <a href="publications.html">Publications</a>
-      <a href="outreach.html">Dissemination</a>
-      <a href="resources.html">Resources</a>
-    </nav>
-  </header>
 
-  <main>
-    <h2>Welcome</h2>
+<header class="topbar shell">
+  <nav>
+    <a href="#research">Research</a>,
+    <a href="#publications">Publications</a>,
+    <a href="#dissemination">Dissemination</a>,
+    <a href="#bio">Bio</a>,
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main class="shell">
+
+  <section class="hero">
+    <div class="hero-grid">
+      <div>
+        <h1>Andrea<br>Quezada</h1> <!-- EDIT -->
+        <p class="standfirst">
+          I study how proteins recognize and assemble with each other, combining
+          structural prediction, biophysics and developmental biology.
+        </p> <!-- EDIT: one or two sentences in your own words -->
+        <div class="hero-meta">
+          <span><span class="k">Position</span>Marie Curie research fellow</span>
+          <span><span class="k">Institute</span><a href="https://www.mdc-berlin.de/">Max Delbrück Center</a></span>
+          <span><span class="k">Location</span>Berlin, Germany</span>
+        </div>
+      </div>
+      <!-- YOUR PHOTO: upload images/profile.jpg to the repo -->
+      <img class="photo" src="images/profile.jpg" alt="Portrait of Andrea Quezada"> <!-- EDIT alt -->
+    </div>
+  </section>
+
+  <section class="room" id="research">
+    <div class="room-head"><span class="room-no">01</span><h2>Research</h2></div>
     <p>
-      I am a Marie Curie research fellow working on protein–protein interactions, structural biology,
-      and computational analyses of developmental systems.
+      <!-- EDIT: 3-5 sentences describing your research questions -->
+      My work focuses on protein–protein interactions and protein-complex
+      prediction, and on how these relate to zebrafish development.
     </p>
-    <p>
-      This website collects my research projects, publications, and science dissemination work.
-    </p>
-  </main>
+    <ul>
+      <li><strong>Protein interfaces:</strong> short description of project 1.</li>
+      <li><strong>Zebrafish development:</strong> short description of project 2.</li>
+      <li><strong>Single-cell expression:</strong> short description of project 3.</li>
+    </ul>
+  </section>
+
+  <section class="room" id="publications">
+    <div class="room-head"><span class="room-no">02</span><h2>Publications</h2></div>
+    <table>
+      <thead><tr><th>Year</th><th>Article</th><th>Links</th></tr></thead>
+      <tbody>
+        <!-- EDIT: one row per paper, newest first. Replace the placeholders -->
+        <tr>
+          <td class="year">YYYY</td>
+          <td>Authors (bold your name with &lt;strong&gt;). Title. <em>Journal</em>.</td>
+          <td><a href="https://doi.org/YOUR-DOI">article</a>, <a href="#">preprint</a></td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Full list: <a href="https://scholar.google.com/">Google Scholar</a> · <a href="https://orcid.org/">ORCID</a></p> <!-- EDIT with your profile URLs -->
+  </section>
+
+  <section class="room" id="dissemination">
+    <div class="room-head"><span class="room-no">03</span><h2>Dissemination</h2></div>
+    <p>Science communication, talks and outreach (mainly in Spanish).</p> <!-- EDIT -->
+    <ul>
+      <li>YYYY – Talk / article / podcast title, venue. <a href="#">link</a></li>
+    </ul>
+  </section>
+
+  <section class="room" id="bio">
+    <div class="room-head"><span class="room-no">04</span><h2>Bio</h2></div>
+    <table>
+      <thead><tr><th>Year</th><th>Position</th><th>Location</th></tr></thead>
+      <tbody>
+        <tr><td class="year">Since YYYY</td><td>Marie Curie research fellow, Max Delbrück Center</td><td>Berlin, Germany</td></tr>
+        <tr><td class="year">YYYY–YYYY</td><td>PhD in biophysical chemistry, institution</td><td>City, Country</td></tr> <!-- EDIT -->
+      </tbody>
+    </table>
+  </section>
+
+  <section class="room" id="contact">
+    <div class="room-head"><span class="room-no">05</span><h2>Contact</h2></div>
+    <p>Email: <a href="mailto:your.email@example.org">your.email@example.org</a></p> <!-- EDIT -->
+    <p><a href="https://github.com/andreaquezada">GitHub</a></p>
+  </section>
+
+</main>
+
+<footer class="shell">© 2026 Andrea Quezada</footer> <!-- EDIT -->
 </body>
 </html>
